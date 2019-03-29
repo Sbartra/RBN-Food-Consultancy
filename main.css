@@ -1,0 +1,99 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+    }
+
+    body {
+      font-family: 'Pacifico', cursive;
+     
+      background-color: #dda0dd;
+    
+  }
+  
+  
+  /* Header/Blog Title */
+  .header {
+      padding: 120px;
+      text-align: center;
+      background: url('');
+    border-radius: 5px;
+  }
+  
+  .header h1 {
+      font-size: 50px;
+      
+      font-family: 'Pacifico', cursive;
+  }
+  
+  h2 {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+
+    .item-1, 
+    .item-2, 
+    .item-3 {
+      position: absolute;
+      display: block;
+      top: 6em;
+      color: aliceblue;
+      width: 60%;
+      background-color: darkcyan;
+      font-size: 2em;
+    
+      animation-duration: 20s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    
+    .item-1{
+      animation-name: anim-1;
+    }
+    
+    .item-2{
+      animation-name: anim-2;
+    }
+    
+    .item-3{
+      animation-name: anim-3;
+    }
+    
+    @keyframes anim-1 {
+      0%, 8.3% { left: -100%; opacity: 0; }
+      8.3%,25% { left: 25%; opacity: 1; }
+      33.33%, 100% { left: 110%; opacity: 0; }
+    }
+    
+    @keyframes anim-2 {
+      0%, 33.33% { left: -100%; opacity: 0; }
+      41.63%, 58.29% { left: 25%; opacity: 1; }
+      66.66%, 100% { left: 110%; opacity: 0; }
+    }
+    
+    @keyframes anim-3 {
+      0%, 66.66% { left: -100%; opacity: 0; }
+      74.96%, 91.62% { left: 25%; opacity: 1; }
+      100% { left: 110%; opacity: 0; }
+    }   
